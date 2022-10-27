@@ -1,0 +1,58 @@
+{
+    "bien": [
+        {
+            "id": 1,
+            "adresse": "14, rue de jean 91940 LES ULIS",
+            "loyer": "600",
+            "prix": "200000",
+            "locataire_id": "3",
+            "proriétaire_id": "1"
+        },
+        {
+            "id": 2,
+            "adresse": "1 avenue mermose 75014 PARIS",
+            "loyer": "800",
+            "prix": "300000",
+            "locataire_id": "2",
+            "proriétaire_id": "1"
+        },
+        {
+            "id": 3,
+            "adresse": "45 boulevard espoir 93100 MONTREUIL",
+            "loyer": "900",
+            "prix": "500000",
+            "locataire_id": "4",
+            "proriétaire_id": "1"
+        }
+    ],
+    "locataire": [
+        {
+            "id": 3,
+            "nom": "Ferrer",
+            "prénom": "Linda",
+            "date de naissance": "21/11/1994",
+            "nationalité": "française"
+        },
+        {
+            "id": 1,
+            "nom": "Lala",
+            "prénom": "Belinda",
+            "date de naissance": "29/06/1998",
+            "nationalité": "marocaine"
+        },
+        {
+            "id": 2,
+            "nom": "Floyd",
+            "prénom": "George",
+            "date de naissance": "06/02/1980",
+            "nationalité": "anglaise"
+        },
+        {
+            "id": 4,
+            "nom": "Kalding",
+            "prénom": "Merlin",
+            "date de naissance": "12/05/1985",
+            "nationalité": "saoudienne"
+        }
+    ]
+}
