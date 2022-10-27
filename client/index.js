@@ -14,7 +14,7 @@ app.get("/", function (request, response) {
     response.render("homePage");
 });
 
-app.get("/test", function (request, response) {
+app.get("/appartements", function (request, response) {
 
     response.render("testPage");
 });
