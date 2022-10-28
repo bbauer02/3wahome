@@ -16,48 +16,14 @@
 </head>
 
 <body>
-    <div class="container p-5"></div>
-    <h1>Accueil - Liste des biens</h1>
+    <div class="container p-5">
+        <h1>Accueil - Tous vos biens</h1>
+        <ul>
+            <li>Les biens</li>
+            <li>Les locataires</li>
+        </ul>
+    </div>
 
-    <table class="table">
-        <tr>
-
-            <td>
-                ID BIEN
-            </td>
-            <td>
-                ADRESSE
-            </td>
-            <td>
-                LOYER MENSUEL (en €)
-            </td>
-            <td>
-                PRIX D'ACHAT (en €)
-            </td>
-            <td>
-                LOCATAIRE ID
-            </td>
-        </tr>
-        <% for(var i=0; i < object.length; i++) { %>
-            <tr data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Voir les infos sur le locataire">
-
-                <td>
-                    <%= object[i].id %>
-                </td>
-                <td>
-                    <%= object[i].adresse %>
-                </td>
-                <td>
-                    <%= object[i].loyer %>
-                </td>
-                <td>
-                    <%= object[i].prix %>
-                </td>
-                <td>
-                    <%= object[i].locataire_id %>
-                </td>
-            </tr>
-            <% } %>
-    </table>
 </body>
-</body>
+
+</html>
