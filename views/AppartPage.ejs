@@ -54,7 +54,8 @@
                         <%= object[i].prix %>
                     </td>
                     <td>
-                        <%= object[i].locataire_id %>
+                        <a href="/locataire/<%= object[i].locataire_id %>">Voir les infos de location</a>
+
                     </td>
                 </tr>
                 <% } %>

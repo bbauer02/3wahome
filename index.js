@@ -26,22 +26,22 @@ app.get("/", function (request, response) {
  * 
  */
 app.get("/appartements", (request, response) => {
-    fetchData(object => {
+    getApparts(object => {
         response.render("AppartPage", { object: object });
     })
 
 });
 /**
  * 
- * Attrape la liste des appartements envoyés par l'API
- * @param {Object} callback 
+ * Liste tous les appartements envoyés par l'API
+ * @param {Object} func
  * 
  */
-function fetchData(func) {
-    fetch("http://localhost:3000/bien") //Could change this to a find request to the data base directly like Teacher.find()...
-        .then(res => res.json())
+function getApparts(func) {
+    fetch("http://localhost:3000/bien")
+        .then(res => res.json()) /* les données json sont converties en objet Javascript */
         .then(res => {
-            return func(res);
+            return func(res); /* Résolution de la Promise envoyée par json() */
         })
         .catch(err => {
             console.log(JSON.stringify(err));
