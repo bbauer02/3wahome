@@ -1,0 +1,16 @@
+@startuml
+
+left to right direction
+actor "Propriétaire" as P
+package "Appli Web" {
+usecase "Retirer de l'argent" as B
+usecase "Consulter les locataires" as L
+usecase "Voir la somme de tous ses biens" as S
+usecase "Voir les revenues moyens de ses locataires" as V
+}
+P --> B
+P --> L
+P --> S
+P --> V
+
+@enduml
